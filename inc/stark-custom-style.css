@@ -1,0 +1,47 @@
+/**Theme Name: Stark
+ * Stark Theme Options custom style
+ * Author: Nithin K R
+ *
+**/
+
+#theme-options-wrap {
+	width: 700px; 
+	padding: 3em; 
+	background: white;  
+	background: -moz-linear-gradient(top, #f4f2f2, white 20%, #f4f2f2 80%, white);  
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4f2f2), color-stop(.2, white), color-stop(.8, #f4f2f2), to(white));  
+	border-top: 1px solid white;
+}
+
+#theme-options-wrap #icon-tools {  
+	position: relative;  
+	top: -10px;
+}
+
+#theme-options-wrap input, #theme-options-wrap textarea {  
+	padding: .7em;
+}
+
+#theme-options-wrap .button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 1em 1.8em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius:    .5em;
+	border-radius:         .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow:    0 1px 2px rgba(0,0,0,.2);
+	box-shadow:         0 1px 2px rgba(0,0,0,.2);
+}
+#theme-options-wrap  .button:hover {
+	text-decoration: none;
+}
+#theme-options-wrap .button:active {
+	position: relative;
+	top: 1px;
+}

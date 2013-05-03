@@ -345,13 +345,21 @@ if ( ! function_exists( 'stark_display_link' ) ) :
 function stark_display_link() {
 	$stk = array();
 	$stk = stark_link();
-	extract( $stk );
+	
+	if($stk) {
+	
+		extract( $stk );
 ?>
 	<h2>
-		<a href="<?php echo $link_url ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'stark' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?><span></span></a>
+		<a href="<?php echo esc_url( $link_url ) ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?><span></span></a>
 	</h2>
 <?php
 	echo $ctnt;
+	}
+
+	else { 
+		the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'stark' ) );
+	}
 
 }
 

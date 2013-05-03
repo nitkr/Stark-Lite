@@ -67,10 +67,22 @@ function stark_link() {
 		if( substr($bit, 0, 1) == '>') $link_text = substr($bit, 1, strlen($bit)-2);
 		if( substr($bit, 0, 4) == 'http') $link_url = $bit;
 	}
-	$output['link_text'] = $link_text;
-	$output['link_url'] = $link_url;
 
-	return $output;
+	if( isset($link_text)) {
+		$output['link_text'] = $link_text;
+	}
+
+	 if ( isset($link_url) ) {
+		$output['link_url'] = $link_url;
+	}
+
+	if ( isset($output['link_url'] ) ) {
+		return $output;
+	}
+
+	else {
+		return false;
+	}
 }
 
 //add social icons

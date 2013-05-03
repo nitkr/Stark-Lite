@@ -112,7 +112,7 @@ function stark_social_options_header() {
 		} //if loop end
 
 		if( !empty($stark_options['wp_stk_email_input'] ) ) { ?>
-		<li><a href="mailto:<?php echo $stark_options['wp_stk_email_input']; ?>" ><img src="<?php echo get_template_directory_uri(); ?>/images/social/email.png" alt="email" /></a></li>
+		<li><a href="mailto:<?php echo antispambot( $stark_options['wp_stk_email_input'], 1 ); ?>" ><img src="<?php echo get_template_directory_uri(); ?>/images/social/email.png" alt="email" /></a></li>
 	<?php
 		} //if loop end ?>
 

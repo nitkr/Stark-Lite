@@ -114,7 +114,7 @@ function stk_options_page_fields(){
 		"section" => "social_section",
 		"id"	  => STARK_SHORT."_email_input",
 		"title"	  => __( 'Email', 'stark' ),
-		"desc"	  => __( 'Links to your email id', 'stark' ),
+		"desc"	  => __( 'Links to your email id, Spam protected.', 'stark' ),
 		"type"	  => "text",
 		"std"	  => __( 'stark@example.com', 'stark' ),
 		"class"	  => "email"

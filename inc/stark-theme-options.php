@@ -194,12 +194,12 @@ function stark_settings_page() {
                             				if($input[$option['id']] != '') {  
                                 				$input_array[$option['id']] = (is_email($input[$option['id']])!== FALSE) ? $input[$option['id']] : __('Invalid email! Please re-enter!','stark');  
                             				}
-							elseif($input[$option['id']] == '') {  
-                               					$input_array[$option['id']] = __('This setting field cannot be empty! Please enter a valid email address.','stark');  
+							elseif( empty( $input[$option['id']] ) ) {
+								$input_array[$option['id']] = esc_attr( $input[$option['id']] );
                            				}  
                               
                             				// register error  
-                            				if(is_email($input[$option['id']])== FALSE || $input[$option['id']] == '') {  
+                            				if(is_email($input[$option['id']])== FALSE && $input[$option['id']] != '' ) {  
                                 				add_settings_error(  
                                     					$option['id'], // setting title  
                                     					STARK_SHORT . '_txt_email_error', // error ID  
@@ -211,7 +211,7 @@ function stark_settings_page() {
 					
 					default:  
 				
-					$input_array[$option['id']] = $input[$option['id']];  
+					$input_array[$option['id']] = esc_attr( $input[$option['id']] );
 				}
 								
 			break;

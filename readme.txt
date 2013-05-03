@@ -17,6 +17,10 @@ Icon credits: http://www.elegantthemes.com/blog/resources/beautiful-free-social-
 
 Version history:
 
+v1.0.8 - Bug fix
+	 Post-format link enhancement and bug fix
+	 Minor style tweaks
+
 v1.0.7 - Added new Icons.
 
 v1.0.6 - Bug fix.

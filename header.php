@@ -38,7 +38,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 	<?php	$text_color = get_header_textcolor(); ?>
-		<?php if( ($stark_options['wp_stk_logo_input'] != '') && ('blank' == $text_color) )  : ?>
+		<?php if( ( isset( $stark_options['wp_stk_logo_input'] ) != '' ) && ( 'blank' == $text_color ) )  : ?>
 		<div id="logo">  
 			<a href="<?php echo esc_url( home_url('/') ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo $stark_options['wp_stk_logo_input']; ?>" alt="logo" />
 			</a>

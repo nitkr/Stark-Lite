@@ -68,15 +68,15 @@ function stark_link() {
 		if( substr($bit, 0, 4) == 'http') $link_url = $bit;
 	}
 
-	if( isset($link_text)) {
+	if( isset( $link_text ) ) {
 		$output['link_text'] = $link_text;
 	}
 
-	 if ( isset($link_url) ) {
+	 if ( isset( $link_url ) ) {
 		$output['link_url'] = $link_url;
 	}
 
-	if ( isset($output['link_url'] ) ) {
+	if ( isset( $output['link_url'] ) ) {
 		return $output;
 	}
 

@@ -199,7 +199,7 @@ function stark_settings_page() {
                            				}  
                               
                             				// register error  
-                            				if(is_email($input[$option['id']])== FALSE && $input[$option['id']] != '' ) {  
+                            				if(is_email($input[$option['id']]) == FALSE && $input[$option['id']] != '' ) {  
                                 				add_settings_error(  
                                     					$option['id'], // setting title  
                                     					STARK_SHORT . '_txt_email_error', // error ID  

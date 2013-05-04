@@ -346,7 +346,7 @@ function stark_display_link() {
 	$stk = array();
 	$stk = stark_link();
 	
-	if($stk) {
+	if( $stk ) {
 	
 		extract( $stk );
 ?>
